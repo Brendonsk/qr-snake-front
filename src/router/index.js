@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import ProcuraAnimal from '../views/ProcuraAnimal.vue'
+import LoginScreen from '../views/LoginScreen.vue'
+import RegisterScreen from '../views/RegisterScreen.vue'
 import CadastrarAnimal from '../views/CadastrarAnimal.vue'
 import QRCode from '../views/QRCode.vue'
 Vue.use(VueRouter);
@@ -14,7 +16,12 @@ const routes = new VueRouter({
     {
       path: '/',
       name: 'Login',
-      component: ProcuraAnimal,
+      component: LoginScreen,
+    },
+    {
+      path: '/signUp',
+      name: 'Logon',
+      component: RegisterScreen,
     },
     {
       path: '/search',

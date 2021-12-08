@@ -32,6 +32,21 @@
         align="center"
       ></v-text-field>
     </div>
+    <div class="password-main">
+      <v-text-field
+        :append-icon="show4 ? 'mdi-eye' : 'mdi-eye-off'"
+        :rules="[rules.required, rules.min]"
+        :type="show4 ? 'text' : 'password'"
+        name="input-10-2"
+        label="Confirme a senha"
+        hint="Min 8 characters"
+        class="input-group--focused"
+        @click:append="show4= !show4"
+        outlined
+        filled
+        align="center"
+      ></v-text-field>
+    </div>
     <div class="button-main">
       <v-btn
         class="ma-2"
@@ -39,7 +54,7 @@
         color="indigo"
         align="center"
       >
-        Entrar
+        Sign Up
       </v-btn>
       <!--
       {{ count }}
